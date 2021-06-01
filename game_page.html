@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Word</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+<span id="player1name"></span><span id="player1score"></span>
+<br>
+<span id="player2name"></span><span id="player2score"></span>
+
+<div class="container">
+	<center>
+		<h2 style="color: white;">Guess The Word!</h2>
+<h3 id="questionturn"></h3>
+<h3 id="answerturn"></h3>
+<br>
+<div id="output" class="col-lg-6"></div>
+		<br>
+		<br>
+
+		<label>Send Your Numbers: <b style="color: red">Type two numbers for your question.</b></label>
+		<br>
+		<br>
+		<br>
+		<label>First Number:</label>
+<input type="number" placeholder="Type your first number here" id="num1" class="form-control">
+<br>
+<label>Second Number:</label>
+<input type="number" placeholder="Type your second number here" id="num2" class="form-control">
+<br>
+<button onclick="send()" class="btn btn-success" style="width:30%;">SEND</button>
+	</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
