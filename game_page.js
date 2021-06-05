@@ -19,12 +19,11 @@ var get_num1=document.getElementById("num1").value;
 var get_num2=document.getElementById("num2").value;
 
 
-question_word="<h4 id='question_word'>Q."+get_num1+x+get_num2+"</h4>";
+question_word="<h4 id='question_word'>Q."+get_num1+"X"+get_num2+"</h4>";
 input_box="<br>Answer: <input type='number' id='answer'>";
 check_button="<br><br><button class='btn btn-info' onclick='check()'>CHECK</button>";
 row=question_word+input_box+check_button;
 
 document.getElementById("output").innerHTML=row;
-
 
 }
